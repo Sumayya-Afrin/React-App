@@ -2,8 +2,10 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-import Fruits from './components/Fruits'
+import Counter from './components/Counter'
+import Form from './components/Form'
 import './components/Hello'
+
 
 
 
@@ -12,8 +14,7 @@ function App() {
 
   return (
     <>
-   <Fruits></Fruits>
-    
+ <Form></Form>
     </>
 
   )

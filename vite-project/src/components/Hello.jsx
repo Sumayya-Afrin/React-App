@@ -1,8 +1,17 @@
 // eslint-disable-next-line react/prop-types
-function Hello({name , phone ,seatNumber})
+function Hello()
 {
+
+    function displayMessage()
+    {
+       console.log('Event listener from react..')
+    }
+
+    
     return (
-        <h1>Hello {name} , {phone} , {seatNumber}</h1>
+        
+        
+<button onClick={displayMessage}>Click me !</button>
     )
 }
 
