@@ -28,6 +28,14 @@ function App() {
     
   }
 
+  function deleteToDo(todoIndex)
+  {
+    setToDo((prevTodos)=>prevTodos.filter((preTodo , preIndex)=>
+    {
+      return preIndex!=todoIndex;
+    }))
+  }
+
   console.log(todo)
 
 
@@ -37,7 +45,7 @@ function App() {
 
  <InputContainer inputval={inputval} addInput={addInput} addToDo={addToDo}></InputContainer>
 
-  <TodoContainer todo={todo}></TodoContainer>
+  <TodoContainer todo={todo} deleteToDo={deleteToDo}></TodoContainer>
      
     </>
   )

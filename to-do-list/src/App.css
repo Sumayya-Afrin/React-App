@@ -47,23 +47,42 @@ button
 .container{
 
 display: flex;
-flex-direction: row;
-justify-content: space-between;
-place-content: center;
-gap: 7rem;
+flex-direction: column;
+gap: 4rem;
 margin-top: 2.5rem;
-height: 3rem;
-background-color: white;
-margin-left: 15rem;
-margin-right: 15rem;
+
+background-color: whitesmoke;
+
 border-radius: 10px;
+
+margin-left: 8rem;
+margin-right: 8rem;
 
 
 
 
 }
 
+.action
+{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ background-color: white;
+ padding: 0.5rem;
+ border-radius: 10px;
+}
+
+.todo-work
+{
+  margin-left: 1.5rem;
+}
+
 .action-button
 {
-  margin-top: 1rem;
+ 
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  
 }
