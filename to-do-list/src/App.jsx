@@ -10,6 +10,15 @@ import TodoContainer from './components/TodoContainer'
 function App() {
   const [inputval , setInput]=useState('')
   const [todo , setToDo]=useState([])
+  const [check , setCheckBox]=useState('false')
+
+
+  function checkBox()
+  {
+
+    setCheckBox(!check)
+
+  }
 
   function addInput(e)
   {
@@ -45,7 +54,7 @@ function App() {
 
  <InputContainer inputval={inputval} addInput={addInput} addToDo={addToDo}></InputContainer>
 
-  <TodoContainer todo={todo} deleteToDo={deleteToDo}></TodoContainer>
+  <TodoContainer todo={todo} deleteToDo={deleteToDo} check={check}></TodoContainer>
      
     </>
   )

@@ -3,7 +3,7 @@ import React from 'react'
 import Todo from './Todo'
 
 // eslint-disable-next-line react/prop-types
-function TodoContainer({todo , deleteToDo}) {
+function TodoContainer({todo , deleteToDo }) {
   return (
  
     <div className="container" >
